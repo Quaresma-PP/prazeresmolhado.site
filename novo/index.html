@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>200 Cafés da Manhã de Nutri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#10B981', // Verde Esmeralda Moderno
+                            dark: '#064E3B',
+                            light: '#ECFDF5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+   <header class="py-16 md:py-24 px-4 text-center max-w-5xl mx-auto">
+    <span class="inline-block py-1 px-3 rounded-full bg-brand-light text-brand-dark text-xs font-bold tracking-wide uppercase mb-4">
+        Nutrição com Sabor
+    </span>
+
+    <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-4 leading-tight">
+        200 CAFÉS DA MANHÃ DE <span class="text-brand-green">NUTRI</span> (COM SABOR)
+    </h1>
+
+    <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+        Receitas de baixas calorias criadas pela nutri Patricia Davidson, com sabor delicioso de verdade.
+    </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 px-2 md:px-0">
+        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-40">
+             <img src="images/m1.png" alt="Exemplo de receita 1" class="w-full h-full md:h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+        </div>
+
+        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-40">
+             <img src="images/m2.png" alt="Exemplo de receita 2" class="w-full h-full md:h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+        </div>
+
+        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-40">
+             <img src="images/m3.png" alt="Exemplo de receita 3" class="w-full h-full md:h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+        </div>
+
+        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-40">
+             <img src="images/m4.png" alt="Exemplo de receita 4" class="w-full h-full md:h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+        </div>
+
+        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-40 col-span-2 md:col-span-1">
+             <img src="images/m5.png" alt="Exemplo de receita 5" class="w-full h-full md:h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+        </div>
+    </div>
+
+    <a href="#oferta" class="inline-block bg-brand-green hover:bg-brand-dark transition-colors text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+        QUERO AS RECEITAS
+    </a>
+</header>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">O QUE VOCÊ VAI RECEBER</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-green mt-1 mr-3"></i> <span>Receitas de até <strong>350 calorias</strong></span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-green mt-1 mr-3"></i> <span>Com sabores deliciosos de verdade</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-green mt-1 mr-3"></i> <span>Com proteínas e vitaminas essenciais</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-green mt-1 mr-3"></i> <span>Prontas em <strong>15 minutos</strong></span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-green mt-1 mr-3"></i> <span>Ingredientes comuns que você tem em casa</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-green mt-1 mr-3"></i> <span>Use apenas liquidificador e frigideira</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-green mt-1 mr-3"></i> <span>Passo a passo de preparo (3 a 10 min)</span></li>
+                    </ul>
+                    <div class="mt-8 text-center">
+                        <a href="#oferta" class="w-full block bg-brand-green hover:bg-brand-dark text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                            QUERO AS RECEITAS
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                     <img src="https://placehold.co/600x600/10B981/ffffff?text=Ebook+Preview" alt="Preview do Ebook" class="rounded-2xl shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">VEJA O QUE VOCÊ VAI APRENDER</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f1.png" alt="Café de Frigideira" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Café de Frigideira</h3>
+                <p class="text-xs text-gray-500">Com Ovos e Frios</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">10 min / 195 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f2.png" alt="Pizza Rápida" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Pizza Rápida</h3>
+                <p class="text-xs text-gray-500">3 Ingredientes</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">207 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f3.png" alt="Panqueca Fit" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Panqueca Fit</h3>
+                <p class="text-xs text-gray-500">De Banana</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">7 min / 183 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f4.png" alt="Omelete Tostada" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Omelete Tostada</h3>
+                <p class="text-xs text-gray-500">De Frios</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">9 min / 125 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f5.png" alt="Salada de Frutas" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Salada de Frutas</h3>
+                <p class="text-xs text-gray-500">Digestivas</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">6 frutas / 120 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f6.png" alt="Pão Cremoso" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Pão Cremoso</h3>
+                <p class="text-xs text-gray-500">Gratinado</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">8 min / 170 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f7.png" alt="Shakes Detox" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Shakes Detox</h3>
+                <p class="text-xs text-gray-500">Saborosos</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">6 min / 120 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f8.png" alt="Bolo de Banana" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Bolo de Banana</h3>
+                <p class="text-xs text-gray-500">De Caneca</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">3 ingred. / 175 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f9.png" alt="Sanduíche Proteico" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Sanduíche Proteico</h3>
+                <p class="text-xs text-gray-500">De Frigideira</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">10 min / 180 cal</div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow">
+                <img src="images/f10.png" alt="Brownie de Frigideira" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-sm mb-1 uppercase text-gray-800">Brownie de Frigideira</h3>
+                <p class="text-xs text-gray-500">(3 Ingredientes)</p>
+                <div class="mt-2 text-xs font-semibold text-brand-green">10 min / 176 cal</div>
+            </div>
+
+            <div class="col-span-2 md:col-span-1 bg-white flex flex-col items-center justify-center border border-dashed border-brand-green rounded-xl p-4 text-center bg-green-50 h-full min-h-[200px]">
+                <h3 class="font-bold text-3xl text-brand-green mb-1">+200</h3>
+                <p class="text-sm text-gray-600 font-semibold">Outras Opções da Nutri!</p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="#oferta" class="inline-block bg-brand-green hover:bg-brand-dark text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transition-colors">
+                QUERO AS RECEITAS AGORA
+            </a>
+        </div>
+    </div>
+</section>
+
+   <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            
+            <div class="flex justify-center mb-8">
+                <img src="images/g1.png" alt="Patricia Davidson" class="w-56 h-56 md:w-64 md:h-64 object-cover rounded-2xl border-4 border-brand-green shadow-2xl">
+            </div>
+
+            <h2 class="text-3xl font-bold mb-6 text-brand-green">CARDÁPIO FEITO PELA NUTRICIONISTA PATRICIA DAVIDSON</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-10">
+                Patricia Davidson, nutricionista especializada em alimentação funcional, criou mais de 200 receitas de cafés da manhã saudáveis, deliciosos de verdade e que ficam prontos em até 10 minutos. Cada receita foi pensada para oferecer todos os nutrientes que seu corpo precisa.
+            </p>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <p class="uppercase tracking-widest text-xs font-bold text-gray-400 mb-8">Ela é a nutricionista das famosas:</p>
+                
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-90">
+                    <div class="flex flex-col items-center">
+                        <img src="images/g2.png" alt="Bruna Marquezine" class="w-24 h-24 object-cover rounded-lg mb-3 border-2 border-gray-600">
+                        <span class="text-sm font-medium text-gray-300">Bruna Marquezine</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/g3.png" alt="Camila Rodrigues" class="w-24 h-24 object-cover rounded-lg mb-3 border-2 border-gray-600">
+                        <span class="text-sm font-medium text-gray-300">Camila Rodrigues</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/g4.png" alt="Paolla Oliveira" class="w-24 h-24 object-cover rounded-lg mb-3 border-2 border-gray-600">
+                        <span class="text-sm font-medium text-gray-300">Paolla Oliveira</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">RECEBA AINDA <span class="text-brand-green">+ 4 BÔNUS EXCLUSIVOS</span></h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm text-center relative overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="absolute top-0 right-0 bg-brand-green text-white text-xs font-bold px-2 py-1 z-10">GRÁTIS</div>
+                    <img src="images/g5.png" alt="Sobremesas Zero Açúcar" class="w-full h-40 object-cover rounded-lg mb-4">
+                    
+                    <h3 class="font-bold text-gray-900 uppercase text-sm">BÔNUS 1:</h3>
+                    <p class="text-sm text-gray-600 font-bold mb-1">200 Sobremesas Zero Açúcar</p>
+                    <p class="text-xs text-gray-400 line-through">R$29,00</p>
+                    <p class="text-sm font-black text-brand-green mt-1">HOJE É GRÁTIS!</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm text-center relative overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="absolute top-0 right-0 bg-brand-green text-white text-xs font-bold px-2 py-1 z-10">GRÁTIS</div>
+                    <img src="images/g6.png" alt="Marmitas Fit" class="w-full h-40 object-cover rounded-lg mb-4">
+                    
+                    <h3 class="font-bold text-gray-900 uppercase text-sm">BÔNUS 2:</h3>
+                    <p class="text-sm text-gray-600 font-bold mb-1">30 Marmitas Fit P/ Congelar</p>
+                    <p class="text-xs text-gray-400 line-through">R$15,00</p>
+                    <p class="text-sm font-black text-brand-green mt-1">HOJE É GRÁTIS!</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm text-center relative overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="absolute top-0 right-0 bg-brand-green text-white text-xs font-bold px-2 py-1 z-10">GRÁTIS</div>
+                    <img src="images/g7.png" alt="Sucos Detox" class="w-full h-40 object-cover rounded-lg mb-4">
+                    
+                    <h3 class="font-bold text-gray-900 uppercase text-sm">BÔNUS 3:</h3>
+                    <p class="text-sm text-gray-600 font-bold mb-1">60 Sucos Detox</p>
+                    <p class="text-xs text-gray-400 line-through">R$29,00</p>
+                    <p class="text-sm font-black text-brand-green mt-1">HOJE É GRÁTIS!</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm text-center relative overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="absolute top-0 right-0 bg-brand-green text-white text-xs font-bold px-2 py-1 z-10">GRÁTIS</div>
+                    <img src="images/g8.png" alt="App de Exercícios" class="w-full h-40 object-cover rounded-lg mb-4">
+                    
+                    <h3 class="font-bold text-gray-900 uppercase text-sm">BÔNUS 4:</h3>
+                    <p class="text-sm text-gray-600 font-bold mb-1">App de Exercícios e Pilates</p>
+                    <p class="text-xs text-gray-400 line-through">R$197,00</p>
+                    <p class="text-sm font-black text-brand-green mt-1">HOJE É GRÁTIS!</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#oferta" class="inline-block bg-brand-green hover:bg-brand-dark text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
+                    QUERO GARANTIR MEUS BÔNUS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-6 text-gray-900">É PERFEITO PARA VOCÊ QUE:</h3>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-times-circle text-red-400 mt-1 mr-3"></i> Não sabe o que comer ao acordar e cai nas opções erradas.</li>
+                    <li class="flex items-start"><i class="fas fa-times-circle text-red-400 mt-1 mr-3"></i> Luta contra a balança, mas não consegue seguir dietas que te deixam com fome.</li>
+                    <li class="flex items-start"><i class="fas fa-times-circle text-red-400 mt-1 mr-3"></i> Acha que comida saudável é sem graça e sente falta de sabor nas refeições.</li>
+                    <li class="flex items-start"><i class="fas fa-times-circle text-red-400 mt-1 mr-3"></i> Tem a rotina corrida e precisa de um café da manhã pronto em menos de 5 minutos.</li>
+                    <li class="flex items-start"><i class="fas fa-times-circle text-red-400 mt-1 mr-3"></i> Acorda sem energia e sente que falta "combustível" para encarar o dia.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold mb-6 text-brand-green">VEJA AS VANTAGENS:</h3>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-check text-brand-green mt-1 mr-3"></i> Cardápio criado por uma nutricionista</li>
+                    <li class="flex items-start"><i class="fas fa-check text-brand-green mt-1 mr-3"></i> Mais de 200 opções saudáveis</li>
+                    <li class="flex items-start"><i class="fas fa-check text-brand-green mt-1 mr-3"></i> Baixíssimas em calorias</li>
+                    <li class="flex items-start"><i class="fas fa-check text-brand-green mt-1 mr-3"></i> Sabor novo todos os dias sem enjoar</li>
+                    <li class="flex items-start"><i class="fas fa-check text-brand-green mt-1 mr-3"></i> Feitas em menos de 15 minutos</li>
+                    <li class="flex items-start"><i class="fas fa-check text-brand-green mt-1 mr-3"></i> Não precisa de utensílios profissionais</li>
+                    <li class="flex items-start"><i class="fas fa-check text-brand-green mt-1 mr-3"></i> Nutrição completa para começar o dia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#oferta" class="inline-block bg-brand-green hover:bg-brand-dark text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
+                QUERO AS RECEITAS
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-16 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">DEPOIMENTOS REAIS TODOS OS DIAS:</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/c1.png" alt="Depoimento 1" class="w-full h-auto rounded-lg shadow-md border border-gray-100">
+                </div>
+
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/c2.png" alt="Depoimento 2" class="w-full h-auto rounded-lg shadow-md border border-gray-100">
+                </div>
+
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/c3.png" alt="Depoimento 3" class="w-full h-auto rounded-lg shadow-md border border-gray-100">
+                </div>
+
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/c4.png" alt="Depoimento 4" class="w-full h-auto rounded-lg shadow-md border border-gray-100">
+                </div>
+
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/c5.png" alt="Depoimento 5" class="w-full h-auto rounded-lg shadow-md border border-gray-100">
+                </div>
+
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/c6.png" alt="Depoimento 6" class="w-full h-auto rounded-lg shadow-md border border-gray-100">
+                </div>
+
+            </div>
+            
+            <p class="text-center text-gray-500 mt-6 text-sm italic">
+                Resultados podem variar de pessoa para pessoa.
+            </p>
+        </div>
+    </section>
+
+   <section id="oferta" class="py-10 md:py-20 px-4 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-2xl border-2 border-brand-green overflow-hidden">
+        
+        <div class="bg-brand-green text-white text-center py-3 md:py-4 font-bold tracking-widest uppercase text-xs md:text-sm">
+            Oferta Especial Limitada
+        </div>
+
+        <div class="p-5 md:p-12 text-center">
+            
+            <div class="mb-4 flex justify-center">
+                <img src="images/Captura de tela 2026-01-18 112126.png" alt="200 Cafés da Manhã Digital" class="w-2/3 md:w-full max-w-sm md:max-w-md mx-auto hover:scale-105 transition-transform duration-500">
+            </div>
+
+            <h3 class="text-xl md:text-3xl font-black text-gray-900 mb-1 leading-tight">200 CAFÉS DA MANHÃ DE NUTRI®</h3>
+            <p class="text-gray-500 mb-4 md:mb-6 font-semibold text-sm md:text-base">(COM SABOR)</p>
+            
+            <div class="bg-green-50 rounded-lg p-3 md:p-6 mb-5 md:mb-8 text-left inline-block w-full max-w-md">
+                <ul class="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                    <li class="flex items-center"><i class="fas fa-plus text-brand-green mr-2"></i> Marmitas Fit</li>
+                    <li class="flex items-center"><i class="fas fa-plus text-brand-green mr-2"></i> Sobremesas Sem Açúcar</li>
+                    <li class="flex items-center"><i class="fas fa-plus text-brand-green mr-2"></i> Sucos Detox</li>
+                    <li class="flex items-center"><i class="fas fa-plus text-brand-green mr-2"></i> App de Exercícios e Pilates</li>
+                </ul>
+            </div>
+
+            <div class="mb-5 md:mb-8">
+                <p class="text-gray-400 line-through text-sm md:text-lg">De R$127,00</p>
+                <div class="flex items-center justify-center gap-2">
+                    <p class="text-gray-600 text-xs md:text-sm">por apenas</p>
+                    <p class="text-4xl md:text-6xl font-black text-brand-green">R$49,90</p>
+                </div>
+                <p class="text-xs md:text-sm text-gray-500 mt-1">À VISTA</p>
+            </div>
+
+            <button class="w-full md:w-auto bg-brand-green hover:bg-brand-dark text-white font-bold py-3 md:py-5 px-6 md:px-10 rounded-xl text-lg md:text-xl shadow-xl transition-transform transform hover:scale-105 mb-2 md:mb-4">
+                QUERO AS RECEITAS
+            </button>
+            
+            <div class="flex justify-center">
+                <p class="inline-flex items-center justify-center text-[10px] md:text-xs text-red-600 font-bold bg-red-50 border border-red-100 rounded-full px-3 py-1 md:bg-transparent md:border-0 md:p-0">
+                    <i class="fas fa-clock mr-1.5 animate-pulse"></i> VALOR PROMOCIONAL EXPIRA HOJE ÀS 23:59
+                </p>
+            </div>
+        </div>
+        
+        <div class="bg-gray-100 p-3 md:p-6 flex flex-wrap md:flex-row items-center justify-center gap-x-4 gap-y-2 text-xs text-gray-600">
+            <div class="flex items-center"><i class="fas fa-shield-alt text-brand-green text-sm mr-1"></i> Garantia 30 dias</div>
+            <div class="flex items-center"><i class="fas fa-lock text-brand-green text-sm mr-1"></i> Compra Segura</div>
+            <div class="flex items-center"><i class="fas fa-bolt text-brand-green text-sm mr-1"></i> Acesso Imediato</div>
+        </div>
+    </div>
+</section>
+
+   <section class="py-16 px-4 bg-white text-center">
+    <div class="max-w-2xl mx-auto">
+        
+        <img src="images/Captura de tela 2026-01-18 113019.png" alt="Selo de Garantia de 30 Dias" class="w-40 h-40 mx-auto mb-6 object-contain">
+        
+        <h3 class="text-2xl font-bold mb-4">GARANTIA DE TESTE POR 30 DIAS:</h3>
+        <p class="text-gray-600 mb-0 text-lg">
+            Teste por 30 dias e se não gostar de nenhuma receita, eu devolvo seu dinheiro e você pode ficar com o produto e todos os bônus. O risco é todo meu.
+        </p>
+    </div>
+</section>
+
+   <section class="py-16 px-4 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900">COMO IREI RECEBER AS RECEITAS?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-10">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="fas fa-envelope-open-text text-4xl text-brand-green mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">E-mail e WhatsApp</h3>
+                    <p class="text-gray-600 text-sm">Você recebe o acesso imediato direto no seu E-mail e também no WhatsApp.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="fas fa-mobile-alt text-4xl text-brand-green mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Qualquer Dispositivo</h3>
+                    <p class="text-gray-600 text-sm">Pode imprimir ou, se preferir, ver no celular, computador ou tablet.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="fas fa-sync-alt text-4xl text-brand-green mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Atualizações Mensais</h3>
+                    <p class="text-gray-600 text-sm">Vou te enviar novas receitas mensalmente para você sempre ter novidades.</p>
+                </div>
+            </div>
+
+            <p class="text-gray-500 italic mb-8">
+                <i class="fas fa-shield-alt mr-2"></i>E caso você perca a receita, eu te envio novamente sem custo.
+            </p>
+
+            <a href="#oferta" class="inline-block bg-brand-green hover:bg-brand-dark text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
+                QUERO AS RECEITAS
+            </a>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-900 text-white px-4">
+        <div class="max-w-4xl mx-auto border-2 border-yellow-500 rounded-2xl p-6 md:p-10 relative bg-gray-800">
+            <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black font-black px-6 py-2 rounded-full shadow-lg uppercase text-sm tracking-wide">
+                Apenas para os 10 primeiros
+            </div>
+
+            <div class="text-center mt-4">
+                <h2 class="text-2xl md:text-4xl font-bold mb-6 text-yellow-400">PRESENTE EXCLUSIVO VIP</h2>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Se você for uma das <strong>10 primeiras pessoas</strong> a comprar as receitas agora, eu vou te presentear com um <strong>acompanhamento VIP por 60 dias</strong>.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center bg-gray-900 p-6 rounded-xl mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white">Funciona assim:</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start"><i class="fas fa-video text-yellow-500 mt-1 mr-3"></i> <span>Chamadas via <strong>ZOOM</strong> para eu entender sua rotina e montar o melhor plano.</span></li>
+                        <li class="flex items-start"><i class="fab fa-whatsapp text-yellow-500 mt-1 mr-3"></i> <span>Acesso ao meu <strong>WhatsApp pessoal</strong> para tirar dúvidas quando quiser.</span></li>
+                        <li class="flex items-start"><i class="fas fa-star text-yellow-500 mt-1 mr-3"></i> <span>Criação de <strong>receitas exclusivas</strong> com os ingredientes que você mais gosta.</span></li>
+                    </ul>
+                </div>
+                <div class="text-center border-t md:border-t-0 md:border-l border-gray-700 pt-6 md:pt-0 md:pl-6">
+                    <p class="text-gray-400 text-sm mb-2">Valor normal deste acompanhamento:</p>
+                    <p class="text-2xl text-gray-500 line-through mb-2">R$ 2.000,00</p>
+                    <p class="text-sm text-gray-300">Agindo agora (10 primeiros):</p>
+                    <p class="text-4xl font-black text-brand-green mt-2 animate-pulse">DE GRAÇA</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#oferta" class="w-full md:w-auto inline-block bg-brand-green hover:bg-brand-dark text-white font-bold py-4 px-12 rounded-lg text-lg shadow-lg transition-colors">
+                    QUERO MEU ACOMPANHAMENTO VIP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">DÚVIDAS FREQUENTES</h2>
+        
+        <div class="space-y-4">
+            <details class="group bg-white border border-gray-200 rounded-lg open:ring-1 open:ring-brand-green overflow-hidden">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <span>As receitas são gostosas de verdade?</span>
+                    <span class="transition-transform group-open:rotate-180"><i class="fas fa-chevron-down text-brand-green"></i></span>
+                </summary>
+                <div class="text-gray-600 p-5 pt-2 leading-relaxed">
+                    Sim! O maior foco da nutri Patricia foi unir saúde com sabor de verdade. Nada de comida sem graça, são receitas realmente gostosas, testadas e aprovadas.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 rounded-lg open:ring-1 open:ring-brand-green overflow-hidden">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <span>São receitas saudáveis?</span>
+                    <span class="transition-transform group-open:rotate-180"><i class="fas fa-chevron-down text-brand-green"></i></span>
+                </summary>
+                <div class="text-gray-600 p-5 pt-2 leading-relaxed">
+                    Todas são saudáveis, equilibradas e pensadas para oferecer os nutrientes e vitaminas que seu corpo precisa para começar bem o dia.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 rounded-lg open:ring-1 open:ring-brand-green overflow-hidden">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <span>As receitas servem para a família toda?</span>
+                    <span class="transition-transform group-open:rotate-180"><i class="fas fa-chevron-down text-brand-green"></i></span>
+                </summary>
+                <div class="text-gray-600 p-5 pt-2 leading-relaxed">
+                    Com certeza! São ideias que agradam adultos e crianças, com ingredientes acessíveis e muito sabor.
+                </div>
+            </details>
+            
+            <details class="group bg-white border border-gray-200 rounded-lg open:ring-1 open:ring-brand-green overflow-hidden">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <span>As receitas são fáceis de fazer?</span>
+                    <span class="transition-transform group-open:rotate-180"><i class="fas fa-chevron-down text-brand-green"></i></span>
+                </summary>
+                <div class="text-gray-600 p-5 pt-2 leading-relaxed">
+                    SIM! A maioria das receitas é simples, com ingredientes acessíveis e instruções claras, perfeitas para o dia a dia corrido.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 rounded-lg open:ring-1 open:ring-brand-green overflow-hidden">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <span>Preciso saber cozinhar para aproveitar?</span>
+                    <span class="transition-transform group-open:rotate-180"><i class="fas fa-chevron-down text-brand-green"></i></span>
+                </summary>
+                <div class="text-gray-600 p-5 pt-2 leading-relaxed">
+                    Não! As receitas foram pensadas para todos os níveis de habilidade na cozinha - inclusive iniciantes.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 rounded-lg open:ring-1 open:ring-brand-green overflow-hidden">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <span>Tem lista de ingredientes acessíveis?</span>
+                    <span class="transition-transform group-open:rotate-180"><i class="fas fa-chevron-down text-brand-green"></i></span>
+                </summary>
+                <div class="text-gray-600 p-5 pt-2 leading-relaxed">
+                    Sim. A nutri priorizou ingredientes que você encontra com facilidade em mercados comuns, sem precisar de produtos caros ou raros.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 rounded-lg open:ring-1 open:ring-brand-green overflow-hidden">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <span>Vou precisar de batedeira ou utensílios especiais?</span>
+                    <span class="transition-transform group-open:rotate-180"><i class="fas fa-chevron-down text-brand-green"></i></span>
+                </summary>
+                <div class="text-gray-600 p-5 pt-2 leading-relaxed">
+                    Não! As receitas foram pensadas para o dia a dia, usando utensílios simples que você já tem em casa. Como colher, garfo, liquidificador e frigideira.
+                </div>
+            </details>
+        </div>
+
+        <div class="mt-12 text-center pb-12">
+            <a href="#oferta" class="inline-block bg-brand-green hover:bg-brand-dark text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+                QUERO AS RECEITAS AGORA
+            </a>
+        </div>
+    </section>
+
+    
+
+    
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-8 text-center text-sm text-gray-400">
+        <p>&copy; 2024 - 200 Cafés da Manhã de Nutri. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
